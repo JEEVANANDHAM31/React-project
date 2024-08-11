@@ -1,12 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+const alertMsg = () =>{
+       alert("Message from Javascript Alert!");
+       console.log("Message to developer");
+}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function A()
+{
+    return (
+        <div>
+          <button onclick = {alertMsg()}>Click</button>
+        </div>
+    );
+}
+
+export default A;
